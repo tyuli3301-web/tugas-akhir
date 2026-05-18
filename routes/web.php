@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/dosis', function() {
     return view('dosis');
 } );
+Route::get('/katalog', function() {
+    return view('katalog');
+} );
