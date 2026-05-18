@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog Insektisida - ObatTimun</title>
     <style>
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+            padding: 0 20px;
+        }
+
+        .nav-item {
+            color: var(--text-white);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s ease-in-out;
+        }
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f9f4; }
         header { background-color: #76d73b; padding: 15px; }
         nav { max-width: 900px; margin: auto; display: flex; justify-content: flex-start; }
@@ -26,9 +44,13 @@
 <body>
 
     <header>
-        <nav>
-             <a href="{{ route('home')}}" class="nav-item">Beranda</a>
+         <div class="hero-section">
+        <nav class="navbar">
+            <a href="{{ route('home')}}" class="nav-item">Beranda</a>
+            <a href="{{route('katalog')}}" class="nav-item">Katalog Obat</a>
+            <a href="{{route('dosis')}}" class="nav-item">Dosis & Aplikasi</a>
         </nav>
+         </div>
     </header>
 
     <div class="container">

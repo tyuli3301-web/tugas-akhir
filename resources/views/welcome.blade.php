@@ -114,7 +114,7 @@
 
     <div class="container">
         <h2>Selamat Datang di ObatTimun</h2>
-        <p>Website ini menyajikan informasi mengenai jenis insektisida yang tepat, takaran dosis yang aman, serta tata cara aplikasi yang efektif agar tanaman mentimun terlindungi dari serangan hama perusak seperti ulat grayak, kutu kebul, thrips, dan kutu daun.</p>
+        <p>Website ini menyajikan informasi mengenai jenis insektisida yang saya pakai dalam menanam timun, avidor dicampur mutualdigunakan untuk membasmi serangga oteng-oteng sedangkan prevathon digunakan untuk hama ulat ketika masa panen</p>
     </div>
 
 </body>
