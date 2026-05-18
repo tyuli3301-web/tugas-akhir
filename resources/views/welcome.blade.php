@@ -102,14 +102,14 @@
 
     <div class="hero-section">
         <nav class="navbar">
-            <a href="index.html" class="nav-item">Beranda</a>
-            <a href="katalog.html" class="nav-item">Katalog Obat</a>
-            <a href="dosis.html" class="nav-item">Dosis & Aplikasi</a>
+            <a href="{{ route('home')}}" class="nav-item">Beranda</a>
+            <a href="{{route('katalog')}}" class="nav-item">Katalog Obat</a>
+            <a href="{{route('dosis')}}" class="nav-item">Dosis & Aplikasi</a>
         </nav>
 
         <h1 class="hero-title">Portal Informasi Obat Timun</h1>
         <p class="hero-subtitle">Panduan Penggunaan Insektisida untuk Pengendalian Hama pada Tanaman Mentimun</p>
-        <a href="katalog.html" class="btn-katalog">Lihat Daftar Obat</a>
+        <a href="{{route('katalog')}}" class="btn-katalog">Lihat Daftar Obat</a>
     </div>
 
     <div class="container">

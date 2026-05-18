@@ -27,7 +27,7 @@
 
     <header>
         <nav>
-            <a href="index.html" class="nav-item"> Kembali ke Beranda</a>
+             <a href="{{ route('home')}}" class="nav-item">Beranda</a>
         </nav>
     </header>
 
@@ -38,7 +38,7 @@
         <div class="grid-obat">
             <div class="kartu-obat">
                 <div class="foto-produk">
-                    <img src="img/prevathon.jpeg" alt="Prevathon" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="{{ asset('img/prevathon.jpeg')}}" alt="Prevathon" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h3>Prevathon 50 SC</h3>
                 <div class="bahan-aktif">Bahan Aktif: Klorantraniliprol 50 g/l</div>
@@ -47,7 +47,7 @@
 
             <div class="kartu-obat">
                 <div class="foto-produk">
-                    <img src="img/mutual.jpeg" alt="Mutual" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="{{ asset('img/mutual.jpeg')}}" alt="Mutual" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h3>Mutual 25/25 WP</h3>
                 <div class="bahan-aktif">Bahan Aktif: Asetamiprid 25% + Buprofezin 25%</div>
@@ -56,7 +56,7 @@
 
             <div class="kartu-obat">
                 <div class="foto-produk">
-                    <img src="img/avidor.jpeg" alt="Avidor" style="width: 100%; height: 100%; object-fit: contain;">
+                    <img src="{{ asset('img/avidor.jpeg')}}" alt="Avidor" style="width: 100%; height: 100%; object-fit: contain;">
                 </div>
                 <h3>Avidor 25 WP</h3>
                 <div class="bahan-aktif">Bahan Aktif: Imidakloprid 25%</div>

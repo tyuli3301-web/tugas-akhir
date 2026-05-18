@@ -27,7 +27,7 @@
 
     <header>
         <nav>
-            <a href="index.html" class="nav-item">Kembali ke Beranda</a>
+             <a href="{{ route('home')}}" class="nav-item">Beranda</a>
         </nav>
     </header>
 
