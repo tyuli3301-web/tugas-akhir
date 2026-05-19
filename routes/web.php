@@ -11,3 +11,6 @@ Route::get('/dosis', function() {
     return view('dosis');
 } )->name('dosis');
 Route::get('/katalog', [ObatController::class, 'index'] )->name('katalog');
+Route::get('/admin', [ObatController::class, 'adminIndex'])->name('admin.index');
+Route::get('/admin/tambah', [ObatController::class, 'adminCreate'])->name('admin.create');
+Route::post('/admin/simpan', [ObatController::class, 'adminStore'])->name('admin.store');
