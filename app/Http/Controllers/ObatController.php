@@ -58,8 +58,8 @@ class ObatController extends Controller
         $namaGambar = $obat->gambar;
 
         if ($request->hasFile('gambar')) {
-            if (File::exists(public_path('img/' . $obat->gambar))) {
-                (File::delete(public_path('img/' .  $obat->gambar)));
+            if  (file_exists(public_path('img/' . $obat->gambar))) {
+            unlink(public_path('img/' . $obat->gambar));
             }
             $namaGambar = time() . '.' . $request->gambar->extension();
             $request->gambar->move(public_path('img'), $namaGambar);

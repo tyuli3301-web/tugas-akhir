@@ -49,6 +49,7 @@
             <a href="{{ route('home')}}" class="nav-item">Beranda</a>
             <a href="{{route('katalog')}}" class="nav-item">Katalog Obat</a>
             <a href="{{route('dosis')}}" class="nav-item">Dosis & Aplikasi</a>
+            <a href="{{ route('admin.index') }}" class="btn btn-sm btn-dark"</a>>Mode Admin</a>
         </nav>
          </div>
     </header>

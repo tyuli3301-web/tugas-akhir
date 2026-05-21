@@ -114,7 +114,7 @@
 
     <div class="container">
         <h2>Selamat Datang di ObatTimun</h2>
-        <p>Website ini menyajikan informasi mengenai jenis insektisida yang saya pakai dalam menanam timun, avidor dicampur mutualdigunakan untuk membasmi serangga oteng-oteng sedangkan prevathon digunakan untuk hama ulat ketika masa panen</p>
+        <p>Website ini menyajikan informasi mengenai jenis insektisida yang saya pakai dalam menanam timun,yaitu avidor dicampur mutual digunakan untuk membasmi serangga oteng-oteng sedangkan prevathon digunakan untuk hama ulat ketika masa panen</p>
     </div>
 
 </body>
