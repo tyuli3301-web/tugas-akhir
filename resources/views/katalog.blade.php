@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="id">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,7 +41,6 @@
         .target-hama { font-size: 14px; color: #d32f2f; font-weight: bold; }
     </style>
 </head>
-<>
 
     <header>
          <div class="hero-section">
