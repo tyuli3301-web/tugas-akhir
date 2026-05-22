@@ -27,6 +27,20 @@
                     <label class="form-label">Target Hama</label>
                     <input type="text" name="target_hama" class="form-control" value="{{ $obat->target_hama }}" required>
                 </div>
+                {{-- ==================== INPUT BARU BIAR TABEL DOSIS OTOMATIS ISI ==================== --}}
+                <div class="mb-3">
+                    <label class="form-label">Formulasi</label>
+                    <input type="text" name="formulasi" class="form-control" value="{{ $obat->formulasi }}" placeholder="Contoh Cair (SC) atau Bubuk (WP)">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Dosis per Tangki (16L)</label>
+                    <input type="text" name="dosis" class="form-control" value="{{ $obat->dosis }}" placeholder="Contoh: 40ml atau 20 gram">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Keterangan Takaran</label>
+                    <textarea name="keterangan_takaran" class="form-control" rows="3" placeholder="Contoh: Setara dengan 1 sendok makan munjung penuh">{{ $obat->keterangan_takaran }}</textarea>
+                </div>
+                {{-- ======================================== --}}
                 <div class="mb-3">
                     <label class="form-label">Foto Produk Baru (Kosongkan jika tidak diganti)</label>
                     <input type="file" name="gambar" class="form-control">
@@ -40,8 +54,8 @@
                     <button type="submit" class="btn btn-warning">Perbarui Data</button>
                 </div>
             </form>
+         </div>
         </div>
-        </div>
-    </div>
+      </div>
 </body>
 </html>

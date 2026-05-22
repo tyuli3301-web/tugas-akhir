@@ -52,6 +52,9 @@ class ObatController extends Controller
             'nama_obat' => 'required',
             'bahan_aktif' => 'required',
             'target_hama' => 'required',
+            'formulasi' => 'nullable',
+            'dosis'=> 'nullable',
+            'keterangan_takaran' => 'nullable',
             'gambar' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
         ]);
        
@@ -63,12 +66,15 @@ class ObatController extends Controller
             }
             $namaGambar = time() . '.' . $request->gambar->extension();
             $request->gambar->move(public_path('img'), $namaGambar);
-        }
+        } 
 
         $obat->update([
             'nama_obat' => $request->nama_obat,
             'bahan_aktif' => $request->bahan_aktif,
             'target_hama' => $request->target_hama,
+            'formulasi' => $request->formulasi,
+            'dosis' => $request->dosis,
+            'keterangan_takaran' => $request->keterangan_takaran,
             'gambar' => $namaGambar
         ]);
 

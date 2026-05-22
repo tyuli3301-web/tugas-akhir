@@ -67,25 +67,23 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td><strong>Prevathon 50 SC</strong></td>
-                    <td><span class="badge-cair">Cair (SC)</span></td>
-                    <td><strong>40 ml</strong></td>
-                    <td>Biasanya dikasih tutup botol ysng ukuran 5oml tiap beli obat Prevathon</td>
-                </tr>
-                <tr>
-                    <td><strong>Mutual 25/25 WP</strong></td>
-                    <td><span class="badge-bubuk">Bubuk (WP)</span></td>
-                    <td><strong>20 gram</strong></td>
-                    <td>Setara dengan 1 sendok makan munjung penuh</td>
-                </tr>
-                <tr>
-                    <td><strong>Avidor 25 WP</strong></td>
-                    <td><span class="badge-bubuk">Bubuk (WP)</span></td>
-                    <td><strong>20 gram</strong></td>
-                    <td>Setara dengan 1 sendok makan munjung penuh</td>
-                </tr>
-            </tbody>
+    @foreach($daftar_obat as $item)
+    <tr>
+        <td>{{ $item->nama_obat }}</td>
+        <td>
+            @if(str_contains(strtolower($item->formulasi), 'cair'))
+                <span class="badge bg-primary">{{ $item->formulasi }}</span>
+            @elseif(str_contains(strtolower($item->formulasi), 'bubuk') || str_contains(strtolower($item->formulasi), 'wp'))
+                <span class="badge bg-warning text-dark">{{ $item->formulasi }}</span>
+            @else
+                <span class="badge bg-secondary">{{ $item->formulasi }}</span>
+            @endif
+        </td>
+        <td>{{ $item->dosis }}</td>
+        <td>{{ $item->keterangan_takaran }}</td>
+    </tr>
+    @endforeach
+</tbody>
         </table>
     </div>
 

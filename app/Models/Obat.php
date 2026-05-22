@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Obat extends Model
 {
-    protected $fillable = ['nama_obat', 'bahan_aktif', 'target_hama', 'gambar'];
+    protected $fillable = ['nama_obat', 'bahan_aktif', 'target_hama', 'formulasi', 'dosis', 'keterangan_takaran', 'gambar'];
 }
