@@ -67,7 +67,7 @@
                 </tr>
             </thead>
             <tbody>
-    @foreach($daftar_obat as $item)
+    @foreach($obats as $item)
     <tr>
         <td>{{ $item->nama_obat }}</td>
         <td>

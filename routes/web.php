@@ -7,9 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 } )->name('home');
 
-Route::get('/dosis', function() {
-    return view('dosis');
-} )->name('dosis');
+Route::get('/dosis', [ObatController::class, 'dosis'])->name('dosis');
+
 Route::get('/katalog', [ObatController::class, 'index'] )->name('katalog');
 Route::get('/admin', [ObatController::class, 'adminIndex'])->name('admin.index');
 Route::get('/admin/tambah', [ObatController::class, 'adminCreate'])->name('admin.create');
