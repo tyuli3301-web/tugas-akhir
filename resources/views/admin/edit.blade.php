@@ -21,11 +21,11 @@
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Bahan Aktif</label>
-                    <input type="text" name="bahan_aktif" class="form-control" value="{{ $obat->$bahan_aktif }}" required>
+                    <input type="text" name="bahan_aktif" class="form-control" value="{{ $obat->bahan_aktif }}" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Target Hama</label>
-                    <input type="text" name="target_hama" class="form-control" value="{{ $obat->$target_hama }}" required>
+                    <input type="text" name="target_hama" class="form-control" value="{{ $obat->target_hama }}" required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Foto Produk Baru (Kosongkan jika tidak diganti)</label>
